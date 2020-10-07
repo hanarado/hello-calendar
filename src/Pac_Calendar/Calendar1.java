@@ -1,5 +1,7 @@
 package Pac_Calendar;
 
+import java.util.Scanner;
+
 public class Calendar1 {
 	public static void main(String[] args) {
 		System.out.println("[Calendar] Year 2020. Month 10");
@@ -9,5 +11,19 @@ public class Calendar1 {
 		System.out.println(" 12\t 13\t 14\t 15\t 16\t 17\t 18\t");
 		System.out.println(" 19\t 20\t 21\t 22\t 23\t 24\t 25\t");
 		System.out.println(" 26\t 27\t 28\t 29\t 30\t 31\t \t");
+
+		// 월을 받아 최대 일자 출력
+		int month;
+		int maxDay;
+		int[] yearMonth = {31, 28, 31,30,31,30,31,31,30,31,30,31};
+		
+		System.out.println("Enter a month!");
+		Scanner sc = new Scanner(System.in);
+		month = sc.nextInt();
+		
+		maxDay = yearMonth[month -1];
+		
+		System.out.println(month + " = " + maxDay);
+		
 	} 
 }
