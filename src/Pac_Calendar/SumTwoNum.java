@@ -1,5 +1,6 @@
 package Pac_Calendar;
-import java.util.*;
+
+import java.util.Scanner;
 
 public class SumTwoNum {
 
@@ -17,6 +18,8 @@ public class SumTwoNum {
 		sum = firstNo + secondNo;
 		
 		System.out.println(firstNo + " + " + secondNo + " = " + sum);
+		
+		sc.close();
 		
 	}
 }
