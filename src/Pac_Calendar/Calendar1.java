@@ -16,14 +16,21 @@ public class Calendar1 {
 		int month;
 		int maxDay;
 		int[] yearMonth = {31, 28, 31,30,31,30,31,31,30,31,30,31};
-		
-		System.out.println("Enter a month!");
+
 		Scanner sc = new Scanner(System.in);
-		month = sc.nextInt();
 		
-		maxDay = yearMonth[month -1];
+		System.out.println("반복 회수 입력 !");
+		int repeat = sc.nextInt();
 		
-		System.out.println(month + " = " + maxDay);
+		for(int i = 0; i < repeat; i++) {
+			System.out.println("Enter a month!");
+			month = sc.nextInt();
+			
+			maxDay = yearMonth[month -1];
+			System.out.println(month + " = " + maxDay);
+		}
+	
+		System.out.println("The end");
 		
 	} 
 }
