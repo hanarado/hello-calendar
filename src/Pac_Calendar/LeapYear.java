@@ -40,8 +40,7 @@ public class LeapYear {
 			}
 			
 			System.out.println("---------------");
-			System.out.println("Leap Year Count from Year" + 
-			                    fromYear + " to Year"+ toYear + " = " + leapYearCnt);
+			System.out.println("Leap Year Count from Year" + fromYear + " to Year"+ toYear + " = " + leapYearCnt);
 			System.out.println();
 		}
 		
