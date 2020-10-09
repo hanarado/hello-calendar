@@ -61,5 +61,4 @@ public class LeapYear {
 
 		return leapYear;
  	}
-		
 }
