@@ -5,7 +5,7 @@ from year 부터 to year까지 윤년 판정
 package Pac_Calendar;
 import java.util.*;
 
-public class LeapYear {
+public class LeapYear1 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
