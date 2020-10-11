@@ -12,12 +12,15 @@ public class Calendar2 {
 		int month;
 		int maxDay;
 		int[] yearMonth = {31, 28, 31,30,31,30,31,31,30,31,30,31};
+		long startTime, endTime;
 
 		Scanner sc = new Scanner(System.in);
 		
 		while(true) {
 			System.out.println("Enter a month! 0 입력시 종료");
 			month = sc.nextInt();
+			
+			startTime = System.currentTimeMillis();
 			
 			if(month < 0 || month > 12) {
 				continue;				
@@ -27,6 +30,15 @@ public class Calendar2 {
 				maxDay = yearMonth[month -1];
 				System.out.println(month + " = " + maxDay);
 			}
+			
+			endTime = System.currentTimeMillis();
+			
+			System.out.println("==========================");
+			System.out.println("Start Time = " + startTime);
+			System.out.println("End Time   = " + endTime);
+			System.out.println("Run Time   = " + ((float)(endTime - startTime)) /1000 + " sec" );
+			System.out.println("==========================");
+			System.out.println();
 		}
 	
 		System.out.println("The end");

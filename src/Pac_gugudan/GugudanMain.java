@@ -8,11 +8,15 @@ public class GugudanMain {
 		int inNum;
 		int outNum;
 		Scanner sc = new Scanner(System.in);
+		RunTimePrint rtp = new RunTimePrint();    //run time print class start
 		
 		while (true) {
 			System.out.println();
 			System.out.println(" Insert number for gugudan!");
 			inNum = sc.nextInt();
+			
+			rtp.runTimeStart();    //run time start
+			
 			System.out.println("[ " + inNum + " Dan ]");
 			if (inNum < 10) {
 				for (int i = 1; i < 10; i++) {
@@ -22,8 +26,9 @@ public class GugudanMain {
 			} else {
 				GugudanCalc.calPrint(GugudanCalc.calcOut(inNum));
 			}
+			
+			rtp.runTimeEnd();   //run time start
 		}
 		
 	}
 }
-
